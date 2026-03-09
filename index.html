@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <title>Jonas Engstrom Connect 4</title>
+    </head>
+<body>
+    <header-outer class="header-outer">
+    <div class="header-container">
+        <div class="header-logo">
+            <a href="/" target="_blank">
+                    <img src="images/logo.svg" alt="Logo" style="width:150px;height:132px;">
+            </a>
+        </div>
+        <div class="header-links">
+
+        </div>
+
+        <div class="dark-mode-container">
+            <button id="darkToggle" class="dark-toggle" type="button">
+                <img id="darkSVG" src="images/night-mode-svgrepo-com.svg" alt="" style="width:75px;height:66px;"/>
+            </button>
+        </div>
+    </div>
+    </header-outer>
+<main>
+  <div class="menu" id="start-menu">
+    <div class="menu-container">
+        <h1>Welcome to Connect 4!</h1>
+        <p>First to connect 4 pieces vertically, horizontally, or diagonally wins!</p>
+        <button class="button" id="start-button">Start Game (side by side)</button>
+        <button class="button" id="start-button-multiplayer">Start Game (multiplayer coming soon)</button>
+    </div>
+  </div>
+  <section id="game-shell" class="outer-main-container game-shell hidden">
+    <div class="inner-main-container">
+      <h1>Connect 4</h1>
+      <div class="turn-div">
+        <p id="player"> Player 1's turn (Red)</p>
+      </div>
+      <div id="game-board"></div>
+      <div class="new-game-div">
+        <button class ="button" type="button" id="new-game">New Game</button>
+      </div>
+      </div>
+  </section>
+</main>
+    <footer class="footer-outer">
+        <div class="footer-container">
+        <div class="footer-links">
+            <ul>
+                <li><a href="https://github.com/jcengstrom" target="_blank">
+                    <img src="images/github-svgrepo-com.svg" alt="Jonas Engstrom GitHub Profile" style="width:50px;height:66px;">
+                </a></li>
+                <li><a href="https://www.w3schools.com" target="_blank">
+                    <img src="images/linkedin-svgrepo-com.svg" alt="Jonas Engstrom LinkedIn Profile" style="width:50px;height:66px;">
+                </a></li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Jonas Engstrom. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+<script>
+  document.getElementById("darkToggle").onclick = function () {
+    document.body.classList.toggle("dark");
+  };
+</script>
+</body>
+</html>
